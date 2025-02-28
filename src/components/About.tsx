@@ -1,47 +1,9 @@
-import { LucideLayoutGrid, Brain, Trophy, Rocket, LandPlot } from 'lucide-react';
 import { SectionTitle } from './ui/SectionTitle';
 import { AboutCard } from './about/AboutCard';
 import { Stats } from './about/Stats';
+import {cards, Name, profileSummary} from '../myData';
 export function About() {
-  const cards = [
-    {
-      icon: LucideLayoutGrid,
-      title: 'Multi-Stack Development',
-      description: 'Specialized in MERN stack with TypeScript, building scalable web applications.',
-      color: 'bg-blue-600',
-    },
-    {
-      icon: Brain,
-      title: 'Problem Solving',
-      description: 'Extensive experience with Strong DSA background in various fields - Financial, Healthcare, etc',
-      color: 'bg-yellow-600',
-    },
-    {
-      icon: Trophy,
-      title: 'Achievements',
-      description: 'Multiple certifications and academic excellence in computer science.',
-      color: 'bg-green-600',
-    },
-    {
-      icon: Rocket,
-      title: 'Innovation',
-      description: 'Passionate about creating innovative solutions to complex problems.',
-      color: 'bg-red-600',
-    },
-    {
-      icon: LandPlot,
-      title: 'Optimized Solutions',
-      description: 'Clean code and Optimized solutions. "A clever man solves a problem. A wise man avoids it."',
-      color: 'bg-purple-600',
-    },
-    {
-      icon: LandPlot,
-      title: 'Fast Learner',
-      description: 'My secret is adaptibility and self-motivation with experience of diverse technologies.',
-      color: 'bg-orange-600',
-    },
-  ];
-
+  
   return (
     <section id="about" className="py-20 relative overflow-hidden">
       {/* Background Elements */}
@@ -54,10 +16,9 @@ export function About() {
         
         <div className="max-w-4xl mx-auto mb-16">
           <div className="text-center mb-8">
-            <strong className='text-xl text-gray-600 dark:text-gray-300 leading-relaxed'>Hello, I'm Elite Highmore.</strong>
+            <strong className='text-xl text-gray-600 dark:text-gray-300 leading-relaxed'>Hello, I'm {Name}.</strong>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm an AI Engineer, dedicated to creating efficient and scalable AI-driven web solutions. With a strong foundation in 
-              Data Structures and Algorithms, I approach each project with a problem-solving mindset.
+              {profileSummary}
             </p>  
           </div>
 

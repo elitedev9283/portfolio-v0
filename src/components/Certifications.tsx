@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { SectionTitle } from "./ui/SectionTitle";
 import { CertificationCard } from "./ui/CertificationCard";
@@ -59,7 +58,7 @@ export function Certifications() {
         <SectionTitle>Certifications</SectionTitle>
         <Slider {...settings} className="max-w-6xl mx-auto">
           {certifications.map((cert) => (
-            <div key={cert.title} className="px-4">
+            <div key={cert.title} className="px-4 hover:scale-105 transform transition-transform duration-300">
               <CertificationCard {...cert} />
             </div>
           ))}
